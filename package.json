@@ -12,7 +12,7 @@
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
     "sitemap": "next-sitemap",
-    "postbuild": "npm run build && npm run sitemap"
+    "postbuild": "npm run sitemap"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",

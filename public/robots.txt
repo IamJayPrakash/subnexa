@@ -1,3 +1,9 @@
-﻿User-agent: *
+# *
+User-agent: *
 Allow: /
-Sitemap: https://subnexa.com/sitemap.xml
+
+# Host
+Host: https://subnexa.vercel.app
+
+# Sitemaps
+Sitemap: https://subnexa.vercel.app/sitemap.xml
