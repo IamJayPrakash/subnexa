@@ -12,25 +12,7 @@ import {
   DropdownMenuItem,
   DropdownMenuTrigger,
 } from '@/components/ui/dropdown-menu';
-
-// Navigation links
-const navigationLinks = [
-  { name: 'Tools', href: '/tools' },
-  { name: 'Categories', href: '#', hasDropdown: true },
-  { name: 'About', href: '/about' },
-  { name: 'Contact', href: '/contact' },
-];
-
-// Categories for dropdown
-const categories = [
-  { name: 'Text Tools', href: '/tools/text' },
-  { name: 'Converters', href: '/tools/converters' },
-  { name: 'Encoders/Decoders', href: '/tools/encoders' },
-  { name: 'Formatters', href: '/tools/formatters' },
-  { name: 'Generators', href: '/tools/generators' },
-  { name: 'SEO Tools', href: '/tools/seo' },
-  { name: 'Web Tools', href: '/tools/web' },
-];
+import { categories, navigationLinks } from '@/constants/index';
 
 export default function Header() {
   const [isOpen, setIsOpen] = useState(false);
