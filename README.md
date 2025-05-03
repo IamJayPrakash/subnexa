@@ -45,7 +45,7 @@ src/
 ├── styles/               # Global and shared styles
 ├── types/                # TypeScript types
 
-````
+```
 
 ---
 
@@ -75,7 +75,7 @@ src/
 git clone https://github.com/IamJayPrakash/subnexa.git
 cd subnexa
 npm install
-````
+```
 
 ### Run in Development
 
@@ -147,7 +147,7 @@ We welcome contributions!
 4. Push to the branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
 
-Please follow the [CODE\_OF\_CONDUCT.md](./CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
+Please follow the [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
 
 ---
 
@@ -166,5 +166,7 @@ Developed by [Jay Prakash](https://heyjayprakash.netlify.app)
 ## 📷 Social Preview
 
 ![Subnexa Open Graph Image](https://subnexa.vercel.app/og-image.png)
+
+```
 
 ```

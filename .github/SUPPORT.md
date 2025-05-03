@@ -1,4 +1,3 @@
-
 # Support
 
 Thank you for using Subnexa! Here's how you can get help:

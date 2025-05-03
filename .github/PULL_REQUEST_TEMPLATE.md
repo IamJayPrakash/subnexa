@@ -1,10 +1,11 @@
 ---
-name: "Pull Request Template"
-about: "Use this template for your pull request"
-title: "WIP: [Title of PR]"
-labels: ""
-assignees: ""
+name: 'Pull Request Template'
+about: 'Use this template for your pull request'
+title: 'WIP: [Title of PR]'
+labels: ''
+assignees: ''
 ---
+
 **Description**
 Provide a short description of the changes in the PR.
 
