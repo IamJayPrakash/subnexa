@@ -3,11 +3,8 @@
 import { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Github, ArrowRight } from 'lucide-react';
-import { useRouter } from 'next/navigation';
 
 export default function ReportIssuePage() {
-  const router = useRouter();
-
   // Redirect after a delay (optional)
   useEffect(() => {
     const timeout = setTimeout(() => {

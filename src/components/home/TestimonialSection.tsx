@@ -135,7 +135,7 @@ export default function TestimonialsSection() {
                   <div className="flex mb-4">
                     {Array.from({ length: 5 }).map((_, i) => (
                       <Star
-                        key={i}
+                        key={`${testimonial.name}-star-${i}`}
                         size={18}
                         className={cn(
                           i < testimonial.rating

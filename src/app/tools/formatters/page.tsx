@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
-import { AlignLeft, ArrowRight, Star, Clock } from 'lucide-react';
+import { AlignLeft, Star, Clock } from 'lucide-react';
 
 // Define metadata for SEO
 export const metadata: Metadata = {

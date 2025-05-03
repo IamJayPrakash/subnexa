@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { cn } from '@/lib/utils';
 import { Github, Heart, Twitter } from 'lucide-react';
 
 const footerLinks = [
@@ -34,7 +33,7 @@ const footerLinks = [
 
 const socialLinks = [
   { name: 'GitHub', href: 'https://github.com/IamJayPrakash/subnexa', icon: Github },
-  { name: 'Twitter', href: 'https://twitter.com', icon: Twitter },
+  { name: 'Twitter', href: '/', icon: Twitter },
 ];
 
 export default function Footer() {

@@ -162,7 +162,6 @@ export default function TermsPage() {
           <a href="mailto:support@subnexa.com" className="text-primary hover:underline">
             support@subnexa.com
           </a>
-          .
         </p>
         <Button asChild>
           <Link href="/tools">Explore All Tools</Link>

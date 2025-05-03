@@ -10,7 +10,7 @@ interface ErrorProps {
   reset: () => void;
 }
 
-export default function Error({ error, reset }: ErrorProps) {
+export default function ErrorPage({ error, reset }: ErrorProps) {
   return (
     <div className="container mx-auto px-4 flex items-center justify-center min-h-[calc(100vh-200px)]">
       <div className="max-w-md w-full text-center">

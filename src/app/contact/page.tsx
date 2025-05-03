@@ -2,15 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import {
-  Mail,
-  MessageSquare,
-  Github,
-  Twitter,
-  BookOpen,
-  CheckCircle,
-  AlertOctagon,
-} from 'lucide-react';
+import { Mail, Github, Twitter, BookOpen, CheckCircle, AlertOctagon } from 'lucide-react';
 
 // Define metadata for SEO
 export const metadata: Metadata = {
@@ -248,8 +240,8 @@ export default function ContactPage() {
         <h2 className="text-2xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
 
         <div className="space-y-4">
-          {FAQS.map((faq, index) => (
-            <div key={index} className="bg-background border border-border rounded-lg p-6">
+          {FAQS.map((faq) => (
+            <div key={faq.question} className="bg-background border border-border rounded-lg p-6">
               <h3 className="font-semibold text-lg mb-2">{faq.question}</h3>
               <p className="text-muted-foreground">{faq.answer}</p>
             </div>

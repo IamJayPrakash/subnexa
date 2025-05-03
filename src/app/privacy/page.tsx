@@ -56,7 +56,6 @@ export default function PrivacyPolicyPage() {
             <a href="mailto:iammrjayprakash@gmail.com" className="underline text-foreground">
               iammrjayprakash@gmail.com
             </a>
-            .
           </p>
 
           <h2 className="text-xl font-semibold text-foreground mt-6">6. Changes to This Policy</h2>
