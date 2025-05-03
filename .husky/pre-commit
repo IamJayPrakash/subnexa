@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+. "$(dirname "$0")/_/husky.sh"
+
+# format everything first
+npm run format
+
+# then lint & auto‑fix via Next.js
+npm run lint -- --fix
