@@ -1,0 +1,33 @@
+frontend:
+  - '**/*.js'
+  - '**/*.jsx'
+  - '**/*.ts'
+  - '**/*.tsx'
+  - '**/*.css'
+  - '**/*.scss'
+  - '**/*.html'
+  - '**/*.vue'
+
+backend:
+  - '**/*.java'
+  - '**/*.py'
+  - '**/*.go'
+  - '**/*.cpp'
+  - '**/*.c'
+  - '**/*.php'
+  - '**/*.rb'
+
+bug:
+  - 'bug/**'
+  - '**/*bug*.md'
+  - '**/bugfix/**'
+
+enhancement:
+  - 'enhancement/**'
+  - '**/*enhance*.md'
+  - '**/features/**'
+
+documentation:
+  - '**/*.md'
+  - '**/*.rst'
+  - 'docs/**'

@@ -1,0 +1,6 @@
+# Set yourself as the owner for the entire repository
+* @IamJayPrakash
+
+# Example: If you want to assign ownership for specific files or directories
+# /src/ @IamJayPrakash
+# /docs/ @IamJayPrakash
