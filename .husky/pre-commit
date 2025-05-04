@@ -1,6 +1,8 @@
-#!/usr/bin/env pwsh
+#!/usr/bin/env powershell
 Write-Host "🔍 Running Prettier..."
 npm run format
 
 Write-Host "🔍 Running ESLint with autofix..."
 npm run lint -- --fix
+
+exit $LASTEXITCODE
