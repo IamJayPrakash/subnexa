@@ -1,85 +1,14 @@
 import React from 'react';
 import Link from 'next/link';
-import { Github, Heart, Twitter } from 'lucide-react';
-
-const footerLinks = [
-  {
-    title: 'Products',
-    links: [
-      { name: 'All Tools', href: '/tools' },
-      { name: 'Categories', href: 'categories' },
-    ],
-  },
-  {
-    title: 'Resources',
-    links: [
-      { name: 'API', href: '/api-docs' },
-      { name: 'Blog', href: '/blog' },
-      { name: 'Documentation', href: '/docs' },
-      { name: 'Roadmap', href: '/roadmap' },
-    ],
-  },
-  {
-    title: 'Company',
-    links: [
-      { name: 'About', href: '/about' },
-      { name: 'Contact', href: '/contact' },
-      { name: 'Privacy Policy', href: '/privacy' },
-      { name: 'Terms of Use', href: '/terms' },
-      { name: 'Report Issue', href: '/report-issue' },
-    ],
-  },
-];
-
-const socialLinks = [
-  { name: 'GitHub', href: 'https://github.com/IamJayPrakash/subnexa', icon: Github },
-  { name: 'Twitter', href: '/', icon: Twitter },
-];
+import { Heart } from 'lucide-react';
+import { footerLinks, socialLinks } from '@/constants';
+import GalaxyFooterAnimation from '../GalaxyFooterAnimation';
 
 export default function Footer() {
   return (
     <footer className="mt-16 relative overflow-hidden">
-      {/* Wave Divider */}
-      <div className="absolute top-0 left-0 w-full h-16">
-        <svg
-          className="w-full h-full fill-gray-100 dark:fill-black-900"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1440 100"
-          preserveAspectRatio="none"
-        >
-          <path d="M0,100 C360,0 720,150 1080,50 C1260,0 1440,100 1440,100 L1440,100 L0,100 Z" />
-        </svg>
-      </div>
-
-      {/* Geometric Background Pattern */}
-      <div className="absolute inset-0">
-        <svg
-          className="w-full h-full opacity-10"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 200 200"
-          fill="none"
-        >
-          <path fill="url(#patternGradient)" d="M0 0h200v200H0z" />
-          <defs>
-            <pattern
-              id="pattern"
-              patternUnits="userSpaceOnUse"
-              width="40"
-              height="40"
-              patternTransform="rotate(45)"
-            >
-              <circle cx="20" cy="20" r="2" className="fill-purple-500 dark:fill-purple-400" />
-            </pattern>
-            <linearGradient id="patternGradient" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stopColor="#A855F7" stopOpacity="0.1" />
-              <stop offset="100%" stopColor="#6B21A8" stopOpacity="0.3" />
-            </linearGradient>
-          </defs>
-          <rect width="100%" height="100%" fill="url(#pattern)" />
-        </svg>
-      </div>
-
-      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 bg-gray-100 dark:bg-black shadow-lg rounded-t-3xl animate-fade-in">
+      <GalaxyFooterAnimation />
+      <div className="relative container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 md:py-20 bg-gray-100/90 dark:bg-black/80 backdrop-blur-md shadow-lg rounded-t-3xl z-0">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-8 sm:gap-10 lg:gap-12">
           {/* Logo and description */}
           <div className="lg:col-span-2">

@@ -6,6 +6,7 @@ import {
   EyeOff,
   FileText,
   Github,
+  GithubIcon,
   Globe,
   GlobeLock,
   KeyRound,
@@ -14,6 +15,7 @@ import {
   Search,
   ShieldCheck,
   Twitter,
+  TwitterIcon,
   Wand2,
 } from 'lucide-react';
 
@@ -321,6 +323,40 @@ export const FAQS = [
     question: 'How quickly do you respond to inquiries?',
     answer:
       'We aim to respond to all inquiries within 48 hours. For bug reports or urgent issues, we typically respond much faster.',
+  },
+];
+
+export const socialLinks = [
+  { name: 'GitHub', href: 'https://github.com/IamJayPrakash/subnexa', icon: GithubIcon },
+  { name: 'Twitter', href: '/', icon: TwitterIcon },
+];
+
+export const footerLinks = [
+  {
+    title: 'Products',
+    links: [
+      { name: 'All Tools', href: '/tools' },
+      { name: 'Categories', href: 'categories' },
+    ],
+  },
+  {
+    title: 'Resources',
+    links: [
+      { name: 'API', href: '/api-docs' },
+      { name: 'Blog', href: '/blog' },
+      { name: 'Documentation', href: '/docs' },
+      { name: 'Roadmap', href: '/roadmap' },
+    ],
+  },
+  {
+    title: 'Company',
+    links: [
+      { name: 'About', href: '/about' },
+      { name: 'Contact', href: '/contact' },
+      { name: 'Privacy Policy', href: '/privacy' },
+      { name: 'Terms of Use', href: '/terms' },
+      { name: 'Report Issue', href: '/report-issue' },
+    ],
   },
 ];
 
