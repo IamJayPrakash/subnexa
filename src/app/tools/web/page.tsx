@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { Globe, Sparkles, Clock } from 'lucide-react';
+import { WEB_TOOLS } from '@/constants';
 
 // SEO metadata
 export const metadata: Metadata = {
@@ -19,52 +20,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-// Web tools data
-const WEB_TOOLS = [
-  {
-    id: 'http-header-checker',
-    name: 'HTTP Header Checker',
-    description: 'Inspect and analyze HTTP headers for any URL.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'ip-address-lookup',
-    name: 'IP Address Lookup',
-    description: 'Get geolocation and ISP info from any IP address.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'user-agent-parser',
-    name: 'User Agent Parser',
-    description: 'Decode user-agent strings to identify browser and device.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'http-status-code-checker',
-    name: 'HTTP Status Code Checker',
-    description: 'Check the HTTP response code of any URL.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'dns-lookup',
-    name: 'DNS Lookup',
-    description: 'Retrieve DNS records for a domain name.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'port-scanner',
-    name: 'Port Scanner',
-    description: 'Scan for open ports on a given IP address.',
-    popular: false,
-    new: false,
-  },
-];
 
 export default function WebToolsPage() {
   const popularTools = WEB_TOOLS.filter((tool) => tool.popular);

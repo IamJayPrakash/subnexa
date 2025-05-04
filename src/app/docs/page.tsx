@@ -2,55 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { Menu, X } from 'lucide-react';
-
-const docSections = [
-  {
-    id: 'getting-started',
-    title: 'Getting Started',
-    content: `
-      <p>Welcome to Subnexa’s documentation! Subnexa is a platform offering free, browser-based tools for developers, designers, and digital professionals. This guide will help you get started with using our tools effectively.</p>
-      <h2>Accessing Subnexa Tools</h2>
-      <p>All Subnexa tools are available directly on our website at <a href="https://subnexa.vercel.app" class="text-primary dark:text-purple-400 hover:text-purple-600 dark:hover:text-purple-300">subnexa.vercel.app</a>. No account or login is required—just visit the <Link href="/tools">Tools</Link> page to explore our offerings.</p>
-      <h3>First Steps</h3>
-      <ol>
-        <li>Navigate to the Tools page from the homepage.</li>
-        <li>Browse categories or search for a specific tool (e.g., "JSON Formatter").</li>
-        <li>Use the tool directly in your browser—no installation needed.</li>
-      </ol>
-    `,
-  },
-  {
-    id: 'tools-overview',
-    title: 'Tools Overview',
-    content: `
-      <p>Subnexa offers a wide range of tools to simplify your workflow. Here’s an overview of some popular categories:</p>
-      <h2>Text Manipulation</h2>
-      <p>Tools like Case Converter, Whitespace Remover, and Duplicate Line Remover help you clean and format text quickly.</p>
-      <h2>Code Utilities</h2>
-      <p>Beautify JSON, format HTML, or test regular expressions with our developer-focused utilities.</p>
-      <h2>Security Tools</h2>
-      <p>Generate secure passwords, encode/decode Base64, or hash data with tools designed for safety and convenience.</p>
-    `,
-  },
-  {
-    id: 'api-reference',
-    title: 'API Reference',
-    content: `
-      <p>Subnexa provides an API for developers to integrate our tools into their applications. This section outlines the available endpoints and usage.</p>
-      <h2>Authentication</h2>
-      <p>The API uses API keys for authentication. Request a key by contacting us via the <Link href="/contact">Contact</Link> page.</p>
-      <h2>Endpoints</h2>
-      <p>Here’s an example of how to use the JSON Formatter endpoint:</p>
-      <pre><code class="language-bash">curl -X POST https://api.subnexa.com/format-json \
--H "Authorization: Bearer YOUR_API_KEY" \
--d '{"json": "{\"key\": \"value\"}"}'</code></pre>
-      <p>Response:</p>
-      <pre><code class="language-json">{
-  "formatted": "{\n  \"key\": \"value\"\n}"
-}</code></pre>
-    `,
-  },
-];
+import { docSections } from '@/constants';
 
 export default function DocsPage() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);

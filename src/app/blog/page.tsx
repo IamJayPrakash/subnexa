@@ -3,33 +3,8 @@ import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 
 import { metadata } from './metadata';
+import { indexBlogPosts } from '@/constants';
 export { metadata };
-
-const blogPosts = [
-  {
-    id: 1,
-    title: 'Top 10 Productivity Tools for Developers in 2025',
-    excerpt:
-      'Discover the best tools to boost your productivity as a developer, from text editors to time trackers.',
-    date: 'April 15, 2025',
-    slug: '/blog/top-10-productivity-tools-2025',
-  },
-  {
-    id: 2,
-    title: 'How Subnexa Simplifies Your Workflow',
-    excerpt:
-      'Learn how Subnexa’s free online tools can streamline your daily tasks with zero cost.',
-    date: 'March 20, 2025',
-    slug: '/blog/how-subnexa-simplifies-workflow',
-  },
-  {
-    id: 3,
-    title: 'The Future of Web Development: Trends to Watch',
-    excerpt: 'Explore upcoming trends in web development, including AI, Web3, and more.',
-    date: 'February 10, 2025',
-    slug: '/blog/future-of-web-development',
-  },
-];
 
 export default function BlogsPage() {
   return (
@@ -76,7 +51,7 @@ export default function BlogsPage() {
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 lg:gap-10">
-          {blogPosts.map((post, index) => (
+          {indexBlogPosts.map((post, index) => (
             <div
               key={post.id}
               className="relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-md border border-gray-200/50 dark:border-gray-700/50 rounded-xl p-6 shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-500 animate-slide-in"

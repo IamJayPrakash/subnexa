@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import { Geist, Geist_Mono } from 'next/font/google';
 import './globals.css';
 import { ThemeProvider } from '@/components/ThemeProvider';
@@ -17,6 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 import metadata from './metadata';
+import { NavigationProgress } from '@/components/NavigationProgress';
 export { metadata };
 
 export default function RootLayout({
@@ -30,6 +30,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen pt-16`}
       >
         <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+          <NavigationProgress />
           <Header />
           <main className="flex-grow">{children}</main>
           <Footer />

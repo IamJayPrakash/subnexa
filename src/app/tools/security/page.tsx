@@ -1,36 +1,9 @@
 'use client';
 
-import { ShieldCheck, KeyRound, EyeOff, GlobeLock } from 'lucide-react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Separator } from '@/components/ui/separator';
-
-const securityTools = [
-  {
-    name: 'Password Strength Checker',
-    description: 'Check how secure your password is using entropy and common pattern analysis.',
-    href: '/tools/security/password-strength-checker',
-    icon: <ShieldCheck className="h-5 w-5 text-primary" />,
-  },
-  {
-    name: 'Base64 Decoder',
-    description: 'Safely decode Base64-encoded strings with browser-side privacy.',
-    href: '/tools/encoders/base64-decode',
-    icon: <KeyRound className="h-5 w-5 text-primary" />,
-  },
-  {
-    name: 'Text Obfuscator',
-    description: 'Make your text unreadable to humans while keeping it recoverable.',
-    href: '/tools/security/text-obfuscator',
-    icon: <EyeOff className="h-5 w-5 text-primary" />,
-  },
-  {
-    name: 'SSL Checker',
-    description: 'Verify the SSL certificate and expiration date of any website.',
-    href: '/tools/security/ssl-checker',
-    icon: <GlobeLock className="h-5 w-5 text-primary" />,
-  },
-];
+import { securityTools } from '@/constants';
 
 export default function SecurityToolsPage() {
   return (

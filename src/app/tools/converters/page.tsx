@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { ArrowRightLeft, ArrowRight, Star, Clock } from 'lucide-react';
+import { CONVERTER_TOOLS } from '@/constants';
 
 // Define metadata for SEO
 export const metadata: Metadata = {
@@ -19,116 +20,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-// Converter tools data
-const CONVERTER_TOOLS = [
-  {
-    id: 'json-to-csv',
-    name: 'JSON to CSV',
-    description: 'Convert JSON data to CSV format with customizable options.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'csv-to-json',
-    name: 'CSV to JSON',
-    description: 'Convert CSV data to JSON format with various configuration options.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'markdown-to-html',
-    name: 'Markdown to HTML',
-    description: 'Convert Markdown syntax to HTML with preview functionality.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'html-to-markdown',
-    name: 'HTML to Markdown',
-    description: 'Convert HTML code to Markdown syntax.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'xml-to-json',
-    name: 'XML to JSON',
-    description: 'Convert XML documents to JSON format.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'json-to-xml',
-    name: 'JSON to XML',
-    description: 'Convert JSON data to XML format.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'yaml-to-json',
-    name: 'YAML to JSON',
-    description: 'Convert YAML files to JSON format.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'json-to-yaml',
-    name: 'JSON to YAML',
-    description: 'Convert JSON data to YAML format.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'image-converter',
-    name: 'Image Format Converter',
-    description: 'Convert images between different formats (JPG, PNG, WebP, etc.).',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'unit-converter',
-    name: 'Unit Converter',
-    description:
-      'Convert between different units of measurement (length, weight, temperature, etc.).',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'color-converter',
-    name: 'Color Code Converter',
-    description: 'Convert between different color formats (HEX, RGB, HSL, etc.).',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'number-base-converter',
-    name: 'Number Base Converter',
-    description: 'Convert numbers between different bases (binary, decimal, hexadecimal, etc.).',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'date-time-converter',
-    name: 'Date & Time Converter',
-    description: 'Convert between different date and time formats and timezones.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'pdf-to-text',
-    name: 'PDF to Text',
-    description: 'Extract text content from PDF files.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'text-to-html',
-    name: 'Text to HTML',
-    description: 'Convert plain text to HTML with proper formatting.',
-    popular: false,
-    new: false,
-  },
-];
 
 export default function ConvertersPage() {
   // Filter tools by popular and new

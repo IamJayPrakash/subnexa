@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { AlignLeft, Star, Clock } from 'lucide-react';
+import { FORMATTER_TOOLS } from '@/constants';
 
 // Define metadata for SEO
 export const metadata: Metadata = {
@@ -19,115 +20,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-// Formatter tools data
-const FORMATTER_TOOLS = [
-  {
-    id: 'json',
-    name: 'JSON Formatter',
-    description: 'Format and validate JSON data with customizable indentation.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'xml',
-    name: 'XML Formatter',
-    description: 'Format and validate XML documents with customizable indentation.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'html',
-    name: 'HTML Formatter',
-    description: 'Format and beautify HTML code with customizable options.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'css',
-    name: 'CSS Formatter',
-    description: 'Format and beautify CSS code for better readability.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'javascript',
-    name: 'JavaScript Formatter',
-    description: 'Format and beautify JavaScript code with customizable options.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'sql',
-    name: 'SQL Formatter',
-    description: 'Format SQL queries for better readability and understanding.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'yaml',
-    name: 'YAML Formatter',
-    description: 'Format and validate YAML files with customizable options.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'typescript',
-    name: 'TypeScript Formatter',
-    description: 'Format and beautify TypeScript code with customizable options.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'markdown',
-    name: 'Markdown Formatter',
-    description: 'Format and beautify Markdown documents for improved readability.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'php',
-    name: 'PHP Formatter',
-    description: 'Format and beautify PHP code with customizable options.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'csv',
-    name: 'CSV Formatter',
-    description: 'Format and clean CSV data with various options.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'python',
-    name: 'Python Formatter',
-    description: 'Format Python code according to PEP 8 and other style guides.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'java',
-    name: 'Java Formatter',
-    description: 'Format and beautify Java code with customizable options.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'c-sharp',
-    name: 'C# Formatter',
-    description: 'Format and beautify C# code with customizable options.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'toml',
-    name: 'TOML Formatter',
-    description: 'Format and validate TOML configuration files.',
-    popular: false,
-    new: false,
-  },
-];
 
 export default function FormattersPage() {
   const popularTools = FORMATTER_TOOLS.filter((tool) => tool.popular);

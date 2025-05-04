@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { Wand2, Sparkles, Clock } from 'lucide-react';
+import { GENERATOR_TOOLS } from '@/constants';
 
 // Define metadata for SEO
 export const metadata: Metadata = {
@@ -19,73 +20,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-// Generator tools data
-const GENERATOR_TOOLS = [
-  {
-    id: 'uuid',
-    name: 'UUID Generator',
-    description: 'Generate universally unique identifiers (UUID v4) instantly.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'password',
-    name: 'Password Generator',
-    description: 'Create secure, random passwords with customizable options.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'lorem-ipsum',
-    name: 'Lorem Ipsum Generator',
-    description: 'Generate dummy placeholder text for design and layout.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'hash-generator',
-    name: 'Hash Generator',
-    description: 'Generate MD5, SHA1, SHA256, and other cryptographic hashes.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'random-string',
-    name: 'Random String Generator',
-    description: 'Generate random alphanumeric strings for testing or use cases.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'slug-generator',
-    name: 'Slug Generator',
-    description: 'Convert titles or sentences into clean, SEO-friendly slugs.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'text-repeater',
-    name: 'Text Repeater',
-    description: 'Repeat text or phrases multiple times with custom settings.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'number-sequence',
-    name: 'Number Sequence Generator',
-    description: 'Generate customizable number sequences for math and testing.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'base64-generator',
-    name: 'Base64 Generator',
-    description: 'Generate Base64-encoded strings from plain text.',
-    popular: false,
-    new: true,
-  },
-];
 
 export default function GeneratorsPage() {
   const popularTools = GENERATOR_TOOLS.filter((tool) => tool.popular);

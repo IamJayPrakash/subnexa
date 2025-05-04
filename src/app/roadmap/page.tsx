@@ -4,48 +4,8 @@ import { CheckCircle, Clock, Target } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
 import { metadata } from './metadata';
+import { roadmapMilestones } from '@/constants';
 export { metadata };
-
-const roadmapMilestones = [
-  {
-    id: 1,
-    title: 'Launch Subnexa Platform',
-    description:
-      'Officially launch the Subnexa platform with 50+ free tools for developers and designers.',
-    status: 'Completed',
-    date: 'Q4 2023',
-  },
-  {
-    id: 2,
-    title: 'Expand Tool Categories',
-    description:
-      'Add new categories like AI tools, security utilities, and advanced text manipulation.',
-    status: 'Completed',
-    date: 'Q2 2024',
-  },
-  {
-    id: 3,
-    title: 'API Integration',
-    description:
-      'Introduce API support for developers to integrate Subnexa tools into their workflows.',
-    status: 'In Progress',
-    date: 'Q1 2025',
-  },
-  {
-    id: 4,
-    title: 'Mobile App Development',
-    description: 'Develop a mobile app for Subnexa to provide on-the-go access to our tools.',
-    status: 'Planned',
-    date: 'Q3 2025',
-  },
-  {
-    id: 5,
-    title: 'Community Features',
-    description: 'Add community-driven features like user feedback, tool requests, and a forum.',
-    status: 'Planned',
-    date: 'Q1 2026',
-  },
-];
 
 const getStatusIconAndColor = (status: string) => {
   switch (status) {

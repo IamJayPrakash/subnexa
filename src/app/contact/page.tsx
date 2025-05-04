@@ -4,68 +4,8 @@ import { Button } from '@/components/ui/button';
 import { Mail, Github, Twitter, BookOpen, CheckCircle, AlertOctagon } from 'lucide-react';
 
 import { metadata } from './metadata';
+import { CONTACT_METHODS, FAQS } from '@/constants';
 export { metadata };
-
-// FAQs for contact page
-const FAQS = [
-  {
-    question: 'How do I suggest a new tool?',
-    answer:
-      'You can suggest a new tool by filling out our contact form and selecting "Tool Suggestion" as the subject. Please include as much detail as possible about the tool you\'d like to see.',
-  },
-  {
-    question: 'How do I report a bug or issue?',
-    answer:
-      'If you\'ve found a bug or issue with any of our tools, please use our contact form with the subject "Bug Report" or visit our dedicated report issue page. Include the tool name, what happened, and what you expected to happen.',
-  },
-  {
-    question: 'Are your tools really free?',
-    answer:
-      'Yes! All tools on SubNexa are completely free to use. We may add premium features in the future, but our core tools will always remain free.',
-  },
-  {
-    question: 'How can I contribute to SubNexa?',
-    answer:
-      'We welcome contributions! You can contribute by reporting bugs, suggesting features, or even submitting pull requests on our GitHub repository. Check out our contribution guidelines for more information.',
-  },
-  {
-    question: 'How quickly do you respond to inquiries?',
-    answer:
-      'We aim to respond to all inquiries within 48 hours. For bug reports or urgent issues, we typically respond much faster.',
-  },
-];
-
-// Contact methods
-const CONTACT_METHODS = [
-  {
-    name: 'Email Us',
-    description: 'Send us a direct email for any inquiries, suggestions, or feedback.',
-    icon: Mail,
-    linkText: 'contact@subnexa.com',
-    linkHref: 'mailto:contact@subnexa.com',
-  },
-  {
-    name: 'GitHub Issues',
-    description: 'Report bugs or suggest features directly on our GitHub repository.',
-    icon: Github,
-    linkText: 'Visit Repository',
-    linkHref: 'https://github.com/IamJayPrakash/subnexa',
-  },
-  {
-    name: 'Twitter',
-    description: 'Follow us or send a DM on Twitter for quick responses.',
-    icon: Twitter,
-    linkText: '@SubNexaTools',
-    linkHref: 'https://twitter.com/SubNexaTools',
-  },
-  {
-    name: 'Documentation',
-    description: 'Check our documentation for help with using our tools.',
-    icon: BookOpen,
-    linkText: 'Read Docs',
-    linkHref: '/docs',
-  },
-];
 
 export default function ContactPage() {
   return (

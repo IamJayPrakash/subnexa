@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { Code, ArrowRight, Star, Clock } from 'lucide-react';
+import { ENCODER_TOOLS } from '@/constants';
 
 // Define metadata for SEO
 export const metadata: Metadata = {
@@ -18,115 +19,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-// Encoder/Decoder tools data
-const ENCODER_TOOLS = [
-  {
-    id: 'base64',
-    name: 'Base64 Encoder/Decoder',
-    description: 'Encode or decode text using Base64 encoding.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'url',
-    name: 'URL Encoder/Decoder',
-    description: 'Encode or decode text for use in URLs.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'jwt',
-    name: 'JWT Decoder',
-    description: 'Decode and verify JSON Web Tokens.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'html',
-    name: 'HTML Encoder/Decoder',
-    description: 'Encode or decode HTML entities in your text.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'hex',
-    name: 'Hex Encoder/Decoder',
-    description: 'Convert text to hexadecimal and vice versa.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'unicode',
-    name: 'Unicode Encoder/Decoder',
-    description: 'Encode or decode text to/from Unicode escape sequences.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'binary',
-    name: 'Binary Encoder/Decoder',
-    description: 'Convert text to binary and vice versa.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'morse-code',
-    name: 'Morse Code Translator',
-    description: 'Convert text to Morse code and vice versa.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'punycode',
-    name: 'Punycode Converter',
-    description: 'Convert between Unicode domain names and Punycode.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'json-escape',
-    name: 'JSON String Escape/Unescape',
-    description: 'Escape or unescape strings for use in JSON.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'uri-component',
-    name: 'URI Component Encoder/Decoder',
-    description: 'Encode or decode URI components.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'caesar-cipher',
-    name: 'Caesar Cipher',
-    description: 'Encode or decode text using the Caesar cipher.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'qrcode',
-    name: 'QR Code Generator',
-    description: 'Encode text into a QR code.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'xml-escape',
-    name: 'XML Escape/Unescape',
-    description: 'Escape or unescape special characters in XML.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'ascii85',
-    name: 'Ascii85 Encoder/Decoder',
-    description: 'Encode or decode text using Ascii85.',
-    popular: false,
-    new: false,
-  },
-];
 
 export default function EncodersPage() {
   // Filter tools by popular and new

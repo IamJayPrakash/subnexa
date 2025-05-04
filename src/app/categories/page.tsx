@@ -1,90 +1,11 @@
 // app/categories/page.tsx
 import React from 'react';
 import Link from 'next/link';
-import { Metadata } from 'next';
-import {
-  FileText,
-  ArrowRightLeft,
-  Code,
-  AlignLeft,
-  Wand2,
-  Search,
-  Globe,
-  Lock,
-  ChevronRight,
-} from 'lucide-react';
+import { ChevronRight } from 'lucide-react';
 
 import { metadata } from './metadata';
+import { CATEGORIES } from '@/constants';
 export { metadata };
-
-// Category data
-const CATEGORIES = [
-  {
-    title: 'Text Tools',
-    description: 'Transform, analyze, and manipulate text with our powerful text utilities.',
-    icon: FileText,
-    href: '/tools/text',
-    color: 'bg-blue-500',
-    popular: ['Text Case Converter', 'Word Counter', 'Text Diff Tool'],
-  },
-  {
-    title: 'Converters',
-    description: 'Convert between different formats, units, and file types effortlessly.',
-    icon: ArrowRightLeft,
-    href: '/tools/converters',
-    color: 'bg-green-500',
-    popular: ['JSON to CSV', 'Markdown to HTML', 'Image Format Converter'],
-  },
-  {
-    title: 'Encoders/Decoders',
-    description: 'Encode or decode content in various formats including Base64, URL, and more.',
-    icon: Code,
-    href: '/tools/encoders',
-    color: 'bg-purple-500',
-    popular: ['Base64 Encoder/Decoder', 'URL Encoder/Decoder', 'JWT Decoder'],
-  },
-  {
-    title: 'Formatters',
-    description: 'Clean, format, and beautify code, text, and data structures.',
-    icon: AlignLeft,
-    href: '/tools/formatters',
-    color: 'bg-orange-500',
-    popular: ['JSON Formatter', 'XML Formatter', 'SQL Formatter'],
-  },
-  {
-    title: 'Generators',
-    description: 'Generate random data, dummy text, secure passwords, and more.',
-    icon: Wand2,
-    href: '/tools/generators',
-    color: 'bg-pink-500',
-    popular: ['Password Generator', 'Lorem Ipsum Generator', 'UUID Generator'],
-  },
-  {
-    title: 'SEO Tools',
-    description: 'Analyze and optimize your website for better search engine visibility.',
-    icon: Search,
-    href: '/tools/seo',
-    color: 'bg-yellow-500',
-    popular: ['Meta Tag Analyzer', 'Keyword Density Checker', 'SERP Preview'],
-  },
-  {
-    title: 'Web Tools',
-    description: 'Useful utilities for web developers, designers, and digital professionals.',
-    icon: Globe,
-    href: '/tools/web',
-    color: 'bg-indigo-500',
-    popular: ['CSS Minifier', 'Image Optimizer', 'Color Picker'],
-  },
-  {
-    title: 'Security Tools',
-    description:
-      'Enhance your security with hash generators, password strength checkers, and more.',
-    icon: Lock,
-    href: '/tools/security',
-    color: 'bg-red-500',
-    popular: ['Hash Generator', 'Password Strength Checker', 'Encryption Tool'],
-  },
-];
 
 export default function CategoriesPage() {
   return (

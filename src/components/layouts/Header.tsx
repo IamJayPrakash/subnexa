@@ -27,6 +27,11 @@ export default function Header() {
     localStorage.setItem('theme', isDarkMode ? 'light' : 'dark');
   };
 
+  // Close mobile menu on route change
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
   // Handle scroll events for header styling
   useEffect(() => {
     const handleScroll = () => {
@@ -48,6 +53,23 @@ export default function Header() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
+
+  // Handle body scroll when mobile menu is open
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [isOpen]);
+
+  const closeMobileMenu = () => {
+    setIsOpen(false);
+  };
 
   return (
     <header
@@ -111,13 +133,8 @@ export default function Header() {
             >
               {isDarkMode ? <Sun size={20} /> : <Moon size={20} />}
             </Button>
-            <Button
-              variant="default"
-              size="sm"
-              className="bg-primary hover:bg-primary/90"
-              onClick={() => (window.location.href = '/categories')}
-            >
-              View All Tools
+            <Button variant="default" size="sm" className="bg-primary hover:bg-primary/90" asChild>
+              <Link href="/categories">View All Tools</Link>
             </Button>
           </div>
 
@@ -137,6 +154,7 @@ export default function Header() {
               size="icon"
               onClick={() => setIsOpen(!isOpen)}
               aria-label="Toggle menu"
+              className="relative z-50"
             >
               {isOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -145,54 +163,62 @@ export default function Header() {
       </div>
 
       {/* Mobile menu */}
-      <div
-        className={cn(
-          'fixed inset-0 bg-background/95 backdrop-blur-sm flex flex-col justify-start pt-20 px-4 md:hidden transition-all duration-300 ease-in-out',
-          isOpen ? 'opacity-100 z-40' : 'opacity-0 -z-10',
-        )}
-      >
-        <nav className="flex flex-col space-y-4">
-          {navigationLinks.map((link) =>
-            link.hasDropdown ? (
-              <div key={link.name} className="flex flex-col">
-                <span className="text-lg font-medium mb-2">{link.name}</span>
-                <div className="flex flex-col space-y-2 pl-4">
-                  {categories.map((category) => (
-                    <Link
-                      key={category.name}
-                      href={category.href}
-                      className="text-foreground/80 hover:text-primary"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {category.name}
-                    </Link>
-                  ))}
-                </div>
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-background/98 backdrop-blur-md md:hidden z-40 overflow-y-auto"
+          onClick={closeMobileMenu}
+        >
+          <div className="min-h-screen p-4 pt-20" onClick={(e) => e.stopPropagation()}>
+            <nav className="flex flex-col space-y-6">
+              {navigationLinks.map((link) =>
+                link.hasDropdown ? (
+                  <div key={link.name} className="flex flex-col">
+                    <span className="text-lg font-medium mb-3">{link.name}</span>
+                    <div className="flex flex-col space-y-3 pl-4 border-l-2 border-primary/20">
+                      {categories.map((category) => (
+                        <Link
+                          key={category.name}
+                          href={category.href}
+                          className="text-foreground/80 hover:text-primary transition-colors"
+                          onClick={closeMobileMenu}
+                        >
+                          {category.name}
+                        </Link>
+                      ))}
+                    </div>
+                  </div>
+                ) : (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    className={cn(
+                      'text-lg font-medium transition-colors',
+                      pathname === link.href
+                        ? 'text-primary'
+                        : 'text-foreground/80 hover:text-primary',
+                    )}
+                    onClick={closeMobileMenu}
+                  >
+                    {link.name}
+                  </Link>
+                ),
+              )}
+              <div className="pt-6">
+                <Button
+                  variant="default"
+                  size="lg"
+                  className="w-full bg-primary hover:bg-primary/90"
+                  asChild
+                >
+                  <Link href="/categories" onClick={closeMobileMenu}>
+                    View All Tools
+                  </Link>
+                </Button>
               </div>
-            ) : (
-              <Link
-                key={link.name}
-                href={link.href}
-                className={cn(
-                  'text-lg font-medium',
-                  pathname === link.href ? 'text-primary' : 'text-foreground/80 hover:text-primary',
-                )}
-                onClick={() => setIsOpen(false)}
-              >
-                {link.name}
-              </Link>
-            ),
-          )}
-          <Button
-            variant="default"
-            size="sm"
-            className="mt-6 bg-primary hover:bg-primary/90 w-full"
-            onClick={() => setIsOpen(false)}
-          >
-            View All Tools
-          </Button>
-        </nav>
-      </div>
+            </nav>
+          </div>
+        </div>
+      )}
     </header>
   );
 }

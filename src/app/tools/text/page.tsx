@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { FileText, ArrowRight, Star, Clock } from 'lucide-react';
+import { TEXT_TOOLS } from '@/constants';
 
 // Define metadata for SEO
 export const metadata: Metadata = {
@@ -19,117 +20,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-// Text tools data
-const TEXT_TOOLS = [
-  {
-    id: 'case-converter',
-    name: 'Text Case Converter',
-    description:
-      'Convert text between different cases: lowercase, UPPERCASE, Title Case, camelCase, and more.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'word-counter',
-    name: 'Word Counter',
-    description:
-      'Count words, characters, sentences, and paragraphs in your text with detailed statistics.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'lorem-ipsum',
-    name: 'Lorem Ipsum Generator',
-    description: 'Generate placeholder text in various formats with customizable options.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'text-diff',
-    name: 'Text Diff Tool',
-    description: 'Compare two texts and highlight the differences between them.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'remove-duplicates',
-    name: 'Remove Duplicate Lines',
-    description: 'Remove duplicate lines from your text while preserving the original order.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'sort-text',
-    name: 'Sort Text Lines',
-    description: 'Sort lines alphabetically, numerically, by length, or in reverse order.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'text-to-speech',
-    name: 'Text to Speech',
-    description: 'Convert your text to spoken words with various voice options.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'line-numbers',
-    name: 'Add/Remove Line Numbers',
-    description: 'Add or remove line numbers from your text content.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'find-replace',
-    name: 'Find and Replace',
-    description: 'Find and replace text with support for regular expressions.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'text-randomizer',
-    name: 'Text Randomizer',
-    description: 'Shuffle words, lines, or characters in your text randomly.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'white-space',
-    name: 'White Space Remover',
-    description: 'Remove extra spaces, tabs, and new lines from your text.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'character-counter',
-    name: 'Character Counter',
-    description: 'Count specific characters or character types in your text.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'text-reverser',
-    name: 'Text Reverser',
-    description: 'Reverse characters, words, or lines in your text.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'text-splitter',
-    name: 'Text Splitter',
-    description: 'Split text by delimiter, character count, or line count.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'text-joiner',
-    name: 'Text Joiner',
-    description: 'Join multiple lines with a custom delimiter.',
-    popular: false,
-    new: true,
-  },
-];
 
 export default function TextToolsPage() {
   // Filter tools by popular and new

@@ -2,6 +2,7 @@ import React from 'react';
 import Link from 'next/link';
 import { Metadata } from 'next';
 import { BarChart3, Sparkles, Clock } from 'lucide-react';
+import { SEO_TOOLS } from '@/constants';
 
 // Metadata for SEO
 export const metadata: Metadata = {
@@ -19,59 +20,6 @@ export const metadata: Metadata = {
     type: 'website',
   },
 };
-
-// SEO tools data
-const SEO_TOOLS = [
-  {
-    id: 'meta-tags-analyzer',
-    name: 'Meta Tags Analyzer',
-    description: 'Analyze the meta title, description, and keywords of any webpage.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'open-graph-checker',
-    name: 'Open Graph Checker',
-    description: 'Preview and validate your Open Graph social sharing tags.',
-    popular: true,
-    new: false,
-  },
-  {
-    id: 'robots-txt-tester',
-    name: 'Robots.txt Tester',
-    description: 'Test and validate your robots.txt rules to control crawler access.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'sitemap-validator',
-    name: 'Sitemap Validator',
-    description: 'Check and validate your XML sitemap for SEO readiness.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'keyword-density-checker',
-    name: 'Keyword Density Checker',
-    description: 'Analyze keyword frequency and density on any webpage.',
-    popular: false,
-    new: false,
-  },
-  {
-    id: 'schema-markup-validator',
-    name: 'Schema Markup Validator',
-    description: 'Validate JSON-LD structured data for SEO and rich results.',
-    popular: false,
-    new: true,
-  },
-  {
-    id: 'hreflang-checker',
-    name: 'Hreflang Tag Checker',
-    description: 'Verify hreflang tags and international targeting setup.',
-    popular: false,
-    new: true,
-  },
-];
 
 export default function SeoToolsPage() {
   const popularTools = SEO_TOOLS.filter((tool) => tool.popular);

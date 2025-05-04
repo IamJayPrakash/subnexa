@@ -15,33 +15,8 @@ import {
 } from 'lucide-react';
 
 import { metadata } from './metadata';
+import { TEAM_MEMBERS } from '@/constants';
 export { metadata };
-
-// Team members data
-const TEAM_MEMBERS = [
-  {
-    name: 'Jay Prakash',
-    role: 'Founder & Lead Developer',
-    description: 'Full-stack developer with a passion for creating useful tools and utilities.',
-    github: 'https://github.com/IamJayPrakash',
-    linkedin: 'https://linkedin.com/in/jayprakash',
-  },
-  {
-    name: 'Chirag Arora',
-    role: 'Senior SEO Specialist',
-    description:
-      'Experienced SEO specialist focused on optimizing web presence and improving search rankings.',
-    // github: 'https://github.com/',
-    linkedin: 'https://www.linkedin.com/in/chiragarora0777/',
-  },
-  {
-    name: 'Dipanshu Kaira',
-    role: 'Performance Marketing Specialist',
-    description: 'Performance marketing specialist with expertise in scalable architectures.',
-    // github: 'https://github.com/',
-    linkedin: 'https://www.linkedin.com/in/dipanshu-kaira/',
-  },
-];
 
 export default function AboutPage() {
   const startYear = 2023;
