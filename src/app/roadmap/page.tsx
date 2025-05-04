@@ -3,6 +3,9 @@ import Link from 'next/link';
 import { CheckCircle, Clock, Target } from 'lucide-react';
 import { cn } from '@/lib/utils';
 
+import { metadata } from './metadata';
+export { metadata };
+
 const roadmapMilestones = [
   {
     id: 1,

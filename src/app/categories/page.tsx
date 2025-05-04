@@ -14,22 +14,8 @@ import {
   ChevronRight,
 } from 'lucide-react';
 
-// Define metadata for SEO
-export const metadata: Metadata = {
-  title: 'Tool Categories | SubNexa',
-  description:
-    'Explore our comprehensive collection of free online tools organized by categories. Find the perfect tool for your task.',
-  keywords:
-    'tool categories, text tools, converters, encoders, formatters, generators, SEO tools, web tools, security tools',
-  openGraph: {
-    title: 'Tool Categories | SubNexa',
-    description:
-      'Explore our comprehensive collection of free online tools organized by categories.',
-    url: 'https://subnexa.com/categories',
-    siteName: 'SubNexa',
-    type: 'website',
-  },
-};
+import { metadata } from './metadata';
+export { metadata };
 
 // Category data
 const CATEGORIES = [

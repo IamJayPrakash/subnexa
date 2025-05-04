@@ -1,10 +1,9 @@
-// src/app/metadata.ts
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Subnexa — All-in-One Online Tool Suite for Developers & Marketers',
+  title: 'Subnexa: Free Online Tools for Developers & Marketers',
   description:
-    'Subnexa is your go-to toolbox offering text utilities, converters, encoders, and more — all in one place. Boost productivity with free, fast, and privacy-friendly tools.',
+    'Subnexa offers free, fast, and privacy-friendly online tools for developers, marketers, and more. Format JSON, encode Base64, analyze SEO, and boost productivity.',
   keywords: [
     'Subnexa',
     'free online tools',
@@ -13,12 +12,55 @@ export const metadata: Metadata = {
     'string tools',
     'encoding tools',
     'base64 encoder',
+    'base64 decoder',
     'word counter',
     'IP lookup',
     'JSON formatter',
+    'JSON validator',
     'productivity tools',
     'SEO tools',
+    'privacy-friendly tools',
+    'text analyzer',
+    'text formatter',
+    'text converter',
+    'text encoder',
+    'text decoder',
+    'text manipulator',
+    'sunex',
+    'subnexa tools',
+    'subnexa utilities',
+    'subnexa text tools',
+    'subnexa string tools',
+    'subnexa encoding tools',
+    'subnexa base64 encoder',
+    'subnexa base64 decoder',
+    'subnexa word counter',
+    'subnexa IP lookup',
+    'subnexa JSON formatter',
+    'subnexa JSON validator',
+    'subnexa productivity tools',
+    'subnexa SEO tools',
+    'subnexa privacy-friendly tools',
     'toolbox',
+    'online toolbox',
+    'free developer utilities',
+    'online text formatter',
+    'secure password generator',
+    'regex tester online',
+    'HTML beautifier',
+    'URL encoder decoder',
+    'online SEO analyzer',
+    'free JSON formatter online',
+    'developer productivity tools',
+    'online encoding tools',
+    'text manipulation tools',
+    'web development tools',
+    'free SEO utilities',
+    'online privacy tools',
+    'subnexa free tools',
+    'subnexa online utilities',
+    'best free developer tools',
+    'online JSON validator',
   ],
   applicationName: 'Subnexa',
   generator: 'Next.js',
@@ -26,9 +68,9 @@ export const metadata: Metadata = {
   creator: 'Jay Prakash',
   publisher: 'Subnexa',
   openGraph: {
-    title: 'Subnexa — Free Online Tools for Developers, Marketers & Everyone',
+    title: 'Subnexa: Free Online Tools for Developers, Marketers & Everyone',
     description:
-      'Access a growing suite of free online utilities including encoders, formatters, counters, and more. No login. No tracking. Just tools.',
+      'Subnexa provides fast, free, and privacy-focused tools: JSON formatter, Base64 encoder, SEO analyzer, and more. No login, no tracking—just productivity.',
     url: 'https://subnexa.vercel.app',
     siteName: 'Subnexa',
     images: [
@@ -36,7 +78,7 @@ export const metadata: Metadata = {
         url: 'https://subnexa.vercel.app/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Subnexa - Free Online Tools',
+        alt: 'Subnexa - Free Online Tools for Developers and Marketers',
       },
     ],
     locale: 'en_US',
@@ -44,17 +86,29 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Subnexa — Free Online Tools for Devs & SEO Experts',
+    title: 'Subnexa: Free Online Tools for Devs & SEO Experts',
     description:
-      'Subnexa gives you fast, free, and reliable online tools to enhance your workflow. Use text analyzers, formatters, encoders, and more.',
+      'Subnexa offers fast, free tools: JSON formatter, Base64 encoder, SEO analyzer, and more. Enhance your workflow with privacy-friendly utilities.',
     images: ['https://subnexa.vercel.app/og-image.png'],
-    creator: '@yourhandle', // Optional: Replace with your Twitter handle
+    creator: '@yourhandle', // Replace with your Twitter handle if available
   },
   metadataBase: new URL('https://subnexa.vercel.app'),
   icons: {
     icon: '/favicon.ico',
     shortcut: '/favicon.ico',
-    apple: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
+    other: [
+      {
+        rel: 'icon',
+        url: '/favicon-32x32.png',
+        sizes: '32x32',
+      },
+      {
+        rel: 'icon',
+        url: '/favicon-16x16.png',
+        sizes: '16x16',
+      },
+    ],
   },
   category: 'utilities',
   robots: {
@@ -65,7 +119,28 @@ export const metadata: Metadata = {
       index: true,
       follow: true,
       noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
     },
+  },
+  alternates: {
+    canonical: 'https://subnexa.vercel.app',
+    languages: {
+      'en-US': 'https://subnexa.vercel.app/en-US',
+    },
+  },
+  other: {
+    'google-site-verification': '1mlwv5pCe6_Ncql6DKNDstpFNiDWNEt8FPKblJ0fAI0',
+    'msapplication-TileImage': '/ms-icon.png',
+    'theme-color': '#A855F7', // Matches your purple branding
+  },
+  manifest: '/manifest.json',
+  viewport: {
+    width: 'device-width',
+    initialScale: 1,
+    maximumScale: 1,
+    userScalable: false,
   },
 };
 

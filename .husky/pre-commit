@@ -1,8 +1,6 @@
-#!/usr/bin/env sh
-. "$(dirname "$0")/_/husky.sh"
-
-# format everything first
+#!/usr/bin/env pwsh
+Write-Host "🔍 Running Prettier..."
 npm run format
 
-# then lint & auto‑fix via Next.js
+Write-Host "🔍 Running ESLint with autofix..."
 npm run lint -- --fix

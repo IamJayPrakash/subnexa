@@ -1,30 +1,30 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Subnexa: Free Online Tools for Developers & Marketers',
+  title: 'Subnexa Blog: Tips, Guides & Insights for Developers',
   description:
-    'Learn about Subnexa, our mission, and our commitment to providing free, privacy-friendly online tools for developers, marketers, and digital professionals.',
+    'Explore the Subnexa blog for expert tips, guides, and insights on developer tools, productivity, SEO strategies, and more. Stay updated with the latest trends.',
   keywords: [
-    'about Subnexa',
-    'Subnexa mission',
-    'Subnexa team',
-    'free online tools',
-    'developer tools',
-    'marketer tools',
-    'text utilities',
-    'encoding tools',
-    'SEO tools',
-    'privacy-friendly tools',
-    'Subnexa free tools',
-    'Subnexa online utilities',
-    'online toolbox',
-    'free developer utilities',
-    'web development tools',
-    'Subnexa about us',
-    'Subnexa story',
-    'Subnexa privacy tools',
-    'best free tools for developers',
-    'online productivity tools',
+    'Subnexa blog',
+    'developer blog',
+    'free online tools blog',
+    'developer tools articles',
+    'productivity tips',
+    'SEO strategies',
+    'web development guides',
+    'Subnexa insights',
+    'Subnexa articles',
+    'Subnexa developer tips',
+    'Subnexa productivity blog',
+    'Subnexa SEO blog',
+    'coding tutorials',
+    'online tools guides',
+    'developer productivity',
+    'SEO for developers',
+    'Subnexa web tools blog',
+    'best developer blog',
+    'online tools tutorials',
+    'Subnexa coding blog',
   ],
   applicationName: 'Subnexa',
   generator: 'Next.js',
@@ -32,17 +32,17 @@ export const metadata: Metadata = {
   creator: 'Jay Prakash',
   publisher: 'Subnexa',
   openGraph: {
-    title: 'About Subnexa: Free Tools for Developers & Marketers',
+    title: 'Subnexa Blog: Tips & Guides for Developers & Marketers',
     description:
-      'Discover Subnexa’s mission to provide free, fast, and privacy-focused tools for developers, marketers, and more. Learn about our team and tools.',
-    url: 'https://subnexa.vercel.app/about',
+      'Read the Subnexa blog for tips, guides, and insights on developer tools, productivity, and SEO. Stay informed with the latest trends and tutorials.',
+    url: 'https://subnexa.vercel.app/blog',
     siteName: 'Subnexa',
     images: [
       {
         url: 'https://subnexa.vercel.app/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'About Subnexa - Free Online Tools',
+        alt: 'Subnexa Blog - Tips and Guides for Developers',
       },
     ],
     locale: 'en_US',
@@ -50,9 +50,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Subnexa: Free Tools for Developers & Marketers',
+    title: 'Subnexa Blog: Tips & Guides for Developers & Marketers',
     description:
-      'Learn about Subnexa’s mission, team, and free online tools for developers and marketers. No login, no tracking—just productivity.',
+      'Discover expert tips, guides, and insights on the Subnexa blog. Learn about developer tools, productivity, and SEO strategies with our latest articles.',
     images: ['https://subnexa.vercel.app/og-image.png'],
     creator: '@yourhandle', // Replace with your Twitter handle if available
   },
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-  category: 'utilities',
+  category: 'blog',
   robots: {
     index: true,
     follow: true,
@@ -89,9 +89,9 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://subnexa.vercel.app/about',
+    canonical: 'https://subnexa.vercel.app/blog',
     languages: {
-      'en-US': 'https://subnexa.vercel.app/en-US/about',
+      'en-US': 'https://subnexa.vercel.app/en-US/blog',
     },
   },
   other: {

@@ -1,24 +1,10 @@
 import React from 'react';
-import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Mail, Github, Twitter, BookOpen, CheckCircle, AlertOctagon } from 'lucide-react';
 
-// Define metadata for SEO
-export const metadata: Metadata = {
-  title: 'Contact Us | SubNexa',
-  description:
-    'Get in touch with the SubNexa team. Share feedback, report issues, or suggest new tools for our collection.',
-  keywords: 'contact SubNexa, feedback, tool suggestion, report bug, help',
-  openGraph: {
-    title: 'Contact Us | SubNexa',
-    description:
-      'Get in touch with the SubNexa team. Share feedback, report issues, or suggest new tools.',
-    url: 'https://subnexa.com/contact',
-    siteName: 'SubNexa',
-    type: 'website',
-  },
-};
+import { metadata } from './metadata';
+export { metadata };
 
 // FAQs for contact page
 const FAQS = [

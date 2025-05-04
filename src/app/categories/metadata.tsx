@@ -1,13 +1,12 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Subnexa: Free Online Tools for Developers & Marketers',
+  title: 'Subnexa Categories: Explore Free Online Tools by Category',
   description:
-    'Learn about Subnexa, our mission, and our commitment to providing free, privacy-friendly online tools for developers, marketers, and digital professionals.',
+    'Browse Subnexa’s tool categories including converters, encoders, formatters, SEO, and more. Find free, privacy-friendly tools for developers and marketers.',
   keywords: [
-    'about Subnexa',
-    'Subnexa mission',
-    'Subnexa team',
+    'Subnexa categories',
+    'Subnexa tool categories',
     'free online tools',
     'developer tools',
     'marketer tools',
@@ -20,11 +19,18 @@ export const metadata: Metadata = {
     'online toolbox',
     'free developer utilities',
     'web development tools',
-    'Subnexa about us',
-    'Subnexa story',
-    'Subnexa privacy tools',
+    'Subnexa converters',
+    'Subnexa encoders',
+    'Subnexa formatters',
+    'Subnexa generators',
+    'Subnexa security tools',
+    'Subnexa SEO tools',
+    'Subnexa text tools',
+    'Subnexa web tools',
     'best free tools for developers',
     'online productivity tools',
+    'category of developer tools',
+    'online tool categories',
   ],
   applicationName: 'Subnexa',
   generator: 'Next.js',
@@ -32,17 +38,17 @@ export const metadata: Metadata = {
   creator: 'Jay Prakash',
   publisher: 'Subnexa',
   openGraph: {
-    title: 'About Subnexa: Free Tools for Developers & Marketers',
+    title: 'Subnexa Categories: Explore Free Tools by Category',
     description:
-      'Discover Subnexa’s mission to provide free, fast, and privacy-focused tools for developers, marketers, and more. Learn about our team and tools.',
-    url: 'https://subnexa.vercel.app/about',
+      'Discover Subnexa’s categories of free, privacy-focused tools for developers and marketers: converters, encoders, SEO tools, and more.',
+    url: 'https://subnexa.vercel.app/categories',
     siteName: 'Subnexa',
     images: [
       {
         url: 'https://subnexa.vercel.app/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'About Subnexa - Free Online Tools',
+        alt: 'Subnexa Categories - Free Online Tools',
       },
     ],
     locale: 'en_US',
@@ -50,9 +56,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Subnexa: Free Tools for Developers & Marketers',
+    title: 'Subnexa Categories: Explore Free Tools by Category',
     description:
-      'Learn about Subnexa’s mission, team, and free online tools for developers and marketers. No login, no tracking—just productivity.',
+      'Explore Subnexa’s tool categories: converters, encoders, SEO tools, and more. Free, fast, and privacy-friendly utilities for developers and marketers.',
     images: ['https://subnexa.vercel.app/og-image.png'],
     creator: '@yourhandle', // Replace with your Twitter handle if available
   },
@@ -89,9 +95,9 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://subnexa.vercel.app/about',
+    canonical: 'https://subnexa.vercel.app/categories',
     languages: {
-      'en-US': 'https://subnexa.vercel.app/en-US/about',
+      'en-US': 'https://subnexa.vercel.app/en-US/categories',
     },
   },
   other: {

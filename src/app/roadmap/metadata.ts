@@ -1,30 +1,25 @@
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'About Subnexa: Free Online Tools for Developers & Marketers',
+  title: 'Subnexa Roadmap: Our Journey and Future Plans',
   description:
-    'Learn about Subnexa, our mission, and our commitment to providing free, privacy-friendly online tools for developers, marketers, and digital professionals.',
+    'Discover Subnexa’s roadmap, including past milestones and future plans like API integration, mobile apps, and community features for our free online tools.',
   keywords: [
-    'about Subnexa',
-    'Subnexa mission',
-    'Subnexa team',
-    'free online tools',
-    'developer tools',
-    'marketer tools',
-    'text utilities',
-    'encoding tools',
-    'SEO tools',
-    'privacy-friendly tools',
-    'Subnexa free tools',
-    'Subnexa online utilities',
-    'online toolbox',
-    'free developer utilities',
-    'web development tools',
-    'Subnexa about us',
-    'Subnexa story',
-    'Subnexa privacy tools',
-    'best free tools for developers',
-    'online productivity tools',
+    'Subnexa roadmap',
+    'Subnexa future plans',
+    'Subnexa milestones',
+    'Subnexa development journey',
+    'Subnexa API integration',
+    'Subnexa mobile app',
+    'Subnexa community features',
+    'Subnexa free tools roadmap',
+    'developer tools roadmap',
+    'Subnexa updates',
+    'Subnexa new features',
+    'Subnexa timeline',
+    'Subnexa growth',
+    'Subnexa platform launch',
+    'Subnexa tool categories',
   ],
   applicationName: 'Subnexa',
   generator: 'Next.js',
@@ -32,17 +27,17 @@ export const metadata: Metadata = {
   creator: 'Jay Prakash',
   publisher: 'Subnexa',
   openGraph: {
-    title: 'About Subnexa: Free Tools for Developers & Marketers',
+    title: 'Subnexa Roadmap: Journey & Upcoming Features',
     description:
-      'Discover Subnexa’s mission to provide free, fast, and privacy-focused tools for developers, marketers, and more. Learn about our team and tools.',
-    url: 'https://subnexa.vercel.app/about',
+      'Explore Subnexa’s roadmap to see our past achievements and future plans, including API support, mobile apps, and more for our free tools.',
+    url: 'https://subnexa.vercel.app/roadmap',
     siteName: 'Subnexa',
     images: [
       {
         url: 'https://subnexa.vercel.app/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'About Subnexa - Free Online Tools',
+        alt: 'Subnexa Roadmap - Journey and Future Plans',
       },
     ],
     locale: 'en_US',
@@ -50,9 +45,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'About Subnexa: Free Tools for Developers & Marketers',
+    title: 'Subnexa Roadmap: Journey & Upcoming Features',
     description:
-      'Learn about Subnexa’s mission, team, and free online tools for developers and marketers. No login, no tracking—just productivity.',
+      'Check out Subnexa’s roadmap for our journey and upcoming features like API integration and mobile apps for our free tools.',
     images: ['https://subnexa.vercel.app/og-image.png'],
     creator: '@yourhandle', // Replace with your Twitter handle if available
   },
@@ -89,9 +84,9 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://subnexa.vercel.app/about',
+    canonical: 'https://subnexa.vercel.app/roadmap',
     languages: {
-      'en-US': 'https://subnexa.vercel.app/en-US/about',
+      'en-US': 'https://subnexa.vercel.app/en-US/roadmap',
     },
   },
   other: {

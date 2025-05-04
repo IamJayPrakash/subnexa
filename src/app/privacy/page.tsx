@@ -1,10 +1,7 @@
-import { Metadata } from 'next';
 import { Separator } from '@/components/ui/separator';
 
-export const metadata: Metadata = {
-  title: 'Privacy Policy | Subnexa',
-  description: 'Read how Subnexa handles your data, privacy, and cookies. We value your privacy.',
-};
+import { metadata } from './metadata';
+export { metadata };
 
 export default function PrivacyPolicyPage() {
   return (

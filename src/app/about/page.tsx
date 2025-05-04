@@ -14,21 +14,8 @@ import {
   PenToolIcon,
 } from 'lucide-react';
 
-// Define metadata for SEO
-export const metadata: Metadata = {
-  title: 'About SubNexa | Free Online Tools Collection',
-  description:
-    'Learn about SubNexa, our mission, and our commitment to providing free online tools for developers, designers, and digital professionals.',
-  keywords: 'about SubNexa, online tools, free tools, developer tools, tool collection',
-  openGraph: {
-    title: 'About SubNexa | Free Online Tools Collection',
-    description:
-      'Learn about SubNexa, our mission, and our commitment to providing free online tools.',
-    url: 'https://subnexa.com/about',
-    siteName: 'SubNexa',
-    type: 'website',
-  },
-};
+import { metadata } from './metadata';
+export { metadata };
 
 // Team members data
 const TEAM_MEMBERS = [
