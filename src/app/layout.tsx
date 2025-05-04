@@ -16,10 +16,8 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
-export const metadata: Metadata = {
-  title: 'Subnexa',
-  description: 'Subnexa — Free Online Tools for Developers, Marketers & Everyone',
-};
+import metadata from './metadata';
+export { metadata };
 
 export default function RootLayout({
   children,
