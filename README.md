@@ -146,7 +146,7 @@ We welcome contributions!
 3. Commit your changes
 4. Push to the branch (`git push origin feature/your-feature`)
 5. Open a Pull Request
-
+![Alt](https://repobeats.axiom.co/api/embed/9e145c912d16ecfbb90d478fd72ecb49f38383c0.svg "Repobeats analytics image")
 Please follow the [CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md) and [CONTRIBUTING.md](./CONTRIBUTING.md) guidelines.
 
 ---
